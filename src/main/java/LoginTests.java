@@ -12,7 +12,7 @@ public class LoginTests {
 
 
     public static void main(String[] args) {
-
+        //comment
         WebDriver driver = new FirefoxDriver(); // open browser
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
