@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+
+    <test name="Login Tests" >
+        <groups>
+            <run>
+                <include name="critical" />
+            </run>
+        </groups>
+        <classes>
+            <class name="practice4.tests.LoginTests" />
+        </classes>
+    </test>
+
+
+    <!--<test name="Positive Login Tests" >-->
+        <!--<classes>-->
+            <!--<class name="practice4.tests.LoginTests">-->
+                <!--<methods>-->
+                    <!--<include name="positiveLoginTest" />-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Negative Login Tests Data Provider" >-->
+        <!--<classes>-->
+            <!--<class name="practice4.tests.LoginTests">-->
+                <!--<methods>-->
+                    <!--<include name="negativeLoginTestDP" />-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Negative Login Tests Param 1" >-->
+        <!--<parameter name="myUsername" value="vasya" />-->
+        <!--<parameter name="myPassword" value="12341251" />-->
+        <!--<parameter name="errorMsg" value="Invalid username or password" />-->
+        <!--<classes>-->
+            <!--<class name="practice4.tests.LoginTests">-->
+                <!--<methods>-->
+                    <!--<include name="negativeLoginTestParameters" />-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Negative Login Tests Param 2" >-->
+        <!--<parameter name="myUsername" value="petya" />-->
+        <!--<parameter name="myPassword" value="1afa2" />-->
+        <!--<parameter name="errorMsg" value="Invalid username or password" />-->
+        <!--<classes>-->
+            <!--<class name="practice4.tests.LoginTests">-->
+                <!--<methods>-->
+                    <!--<include name="negativeLoginTestParameters" />-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+</suite>
