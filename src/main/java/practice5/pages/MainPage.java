@@ -14,6 +14,7 @@ public class MainPage extends AbstractPage {
         super(driver);
     }
 
+    @Override
     public String getUrl() {
         return URL;
     }

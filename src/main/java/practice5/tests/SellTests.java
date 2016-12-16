@@ -7,11 +7,15 @@ import practice5.pages.MainPage;
 import practice5.pages.fragments.HeaderFragment;
 import practice5.pages.helper.HeaderLinksEnum;
 
+import java.util.ResourceBundle;
+
 /**
  * Created by Serhii on 16-Dec-16.
  */
 public class SellTests extends BaseTest{
     private MainPage mainPage;
+    private static final String login = ResourceBundle.getBundle("application").getString("login");
+    private static final String password = ResourceBundle.getBundle("application").getString("password");
 
     @BeforeTest
     public void beforeTest() {
@@ -35,5 +39,12 @@ public class SellTests extends BaseTest{
     @Test
     public void testForFun() {
         Assert.fail("FUUUUUN!!!");
+    }
+
+    @Test
+    public void applicationPropertiesTest() {
+        softAssert.assertEquals(login, "amazon", "Wrong login.");
+        softAssert.assertEquals(password, "password example", "Wrong password.");
+        softAssert.assertAll();
     }
 }
